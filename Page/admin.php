@@ -1,5 +1,5 @@
 <?php
-require './config/koneksi.php';
+require '../config/config.php';
 $perpus = query("SELECT * FROM perpus");
 ?>
 <!DOCTYPE html>
