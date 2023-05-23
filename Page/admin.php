@@ -11,14 +11,14 @@ $perpus = query("SELECT * FROM perpus");
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
-    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/brands.css" />
-    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/brands.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/fontawesome.css" />
 
 
     <title>Admin</title>
@@ -53,9 +53,9 @@ $perpus = query("SELECT * FROM perpus");
                                     <td><?= $per["Judul_Buku"]; ?></td>
                                     <td><?= $per["pengarang"]; ?></td>
                                     <td><?= $per["penerbit"] ?></td>
-                                    <td><?= $per["stok_buku"] ?></td>
+                                    <td><?= $per["Stok_Buku"] ?></td>
                                     <td><?= $per["id_peminjam"]; ?></td>
-                                    <td><?= $per["peminjam"]; ?></td>
+                                    <td><?= $per["Peminjam"]; ?></td>
                                     <td><?= $per["tgl_pinjam"]; ?></td>
                                     <td><?= $per["tgl_kembali"]; ?></td>
                                     <td>
@@ -73,4 +73,6 @@ $perpus = query("SELECT * FROM perpus");
             </div>
         </div>
     </div>
+
+    <script src="JavaScript/main.js"></script>
 </body>

@@ -62,3 +62,39 @@ function hapus_data($id_buku)
     return mysqli_affected_rows($conn);
 }
 ?>
+
+<?php
+function edit_data($perpus)
+{
+    global $conn;
+
+    var_dump($perpus);
+
+    $id_buku = $perpus["id_buku"];
+    $Judul_Buku = $perpus["Judul_Buku"];
+    $pengarang = $perpus["pengarang"];
+    $penerbit = $perpus["penerbit"];
+    $id_peminjam = $perpus["id_peminjam"];
+    $stok_buku = $perpus["stok_buku"];
+    $peminjam = $perpus["peminjam"];
+    $tgl_pinjam = $perpus["tgl_pinjam"];
+    $tgl_kembali = $perpus["tgl_kembali"];
+
+
+    $query = "update data_pegawai set 
+                id_buku = '$id_buku',
+                Judul_Buku = '$Judul_Buku',
+                pengarang = '$pengarang',
+                penerbit = '$penerbit',
+                id_peminjam = '$id_peminjam',
+                stok_buku = '$stok_buku',
+                peminjam = '$peminjam',
+                tgl_pinjam = '$tgl_pinjam',
+                tgl_kembali = '$tgl_kembali'
+                WHERE id_buku = '$id_buku'
+                  ";
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
+?>
