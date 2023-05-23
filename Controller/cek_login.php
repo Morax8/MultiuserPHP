@@ -27,13 +27,13 @@ if ($cek > 0) {
         $_SESSION['username'] = $username;
         $_SESSION['level'] = "admin";
         // alihkan ke halaman dashboard admin
-        header("location:adminpage.php");
+        header("location:../page/admin.php");
     } else if ($data['level'] == "user") {
         // buat session login dan username
         $_SESSION['username'] = $username;
         $_SESSION['level'] = "user";
         // alihkan ke halaman dashboard pengurus
-        header("location:userpage.php");
+        header("location:../Page/user.php");
     } else {
 
         // alihkan ke halaman login kembali
